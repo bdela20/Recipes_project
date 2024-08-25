@@ -1,0 +1,223 @@
+/* Header Styling */
+/* Background for the whole page */
+body {
+  background: url('/frontend/images/kitchen.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container with background color to enhance readability */
+.container {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 8px;
+}
+header {
+  background-color: #404b57;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #eae1e1;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #adc5e2;
+}
+
+/* Main Container Styling for All Pages */
+.main-container {
+  background-color: #2d2f34;
+
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 8px;
+  max-width: 1000px; /* Adjust the width as needed */
+  margin: 100px auto 50px auto; /* Center the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Button Styling Consistent Across Pages */
+.fetch-button,
+.submit-button {
+  background-color: #ae3a0f;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.fetch-button:hover,
+.submit-button:hover {
+  background-color: #e47e09;
+}
+
+/* Recipes Page Grid Styling */
+.country-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 100%; /* Prevents overflow */
+}
+
+.grid-item {
+  background-color: #495057;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Adjusted for full height */
+}
+
+.recipe-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .main-container {
+    margin: 80px 20px 30px 20px;
+    padding: 30px 15px;
+  }
+
+  .fetch-button,
+  .submit-button {
+    padding: 10px;
+  }
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #343a40;
+  color: #adb5bd;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+/* Contact Page Styling */
+.contact-container {
+  background-color: #2d2f34; /* Dark background for contrast */
+  padding: 50px 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 100px auto 50px auto; /* Center the section */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.contact-container h1 {
+  color: #e9ecef;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  text-align: center;
+  color: #adb5bd;
+  margin-bottom: 40px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  color: #adb5bd;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #495057;
+  color: #e9ecef;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #adc5e2;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Error message styling */
+.error {
+  color: #e74c3c;
+}
